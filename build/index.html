@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <title>Document</title>
+</head>
+<body class="bg-black lg:p-20 p-10">
+
+
+<nav class="bg-black p-4 border border-[#1F1F1F] rounded-tr-2xl rounded-tl-2xl">
+    <div class="max-w-screen-xl mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <img src="./assets/img/Logo_design_-_Zero-removebg-preview 1.png" alt="Zero Logo">
+
+        <!-- Menu items (Visible only on desktop) -->
+        <div class="hidden md:flex space-x-6 text-white text-center items-center">
+            <a href="./frist-design.html" class="hover:text-gray-400 border border-[#1E1E1E] py-2 px-4 rounded-full">Home</a>
+            <a href="./GOLDENBOX.html" class="hover:text-gray-400 hover:border border-[#1E1E1E] p-3 rounded-full">Products</a>
+            <a href="./zero.html" class="hover:text-gray-400 hover:border border-[#1E1E1E] p-3 rounded-full">Technology</a>
+            <a href="#" class="hover:text-gray-400 hover:border border-[#1E1E1E] p-3 rounded-full">Learn</a>
+            <a href="#" class="hover:text-gray-400 hover:border border-[#1E1E1E] p-3 rounded-full">Support</a>
+        </div>
+
+        <!-- Cart and User (Desktop view) -->
+        <div class="hidden md:flex items-center space-x-4">
+            <img src="./assets/img/Frame 3.png" class="w-24" alt="Cart Icon">
+            <img src="./assets/img/Frame 2.png" class="w-12" alt="User Icon">
+        </div>
+
+        <!-- Mobile Menu Button (Visible only on screens smaller than 768px) -->
+        <div class="md:hidden relative">
+            <button id="menu-button" class="text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <!-- Cart and User Icons inside the Toggle Button -->
+                <div id="mobile-icons" class="absolute top-0 right-0 hidden flex-col items-center space-y-2 mt-2">
+                    <img src="./assets/img/Frame 3.png" class="w-8" alt="Cart Icon">
+                    <img src="./assets/img/Frame 2.png" class="w-6" alt="User Icon">
+                </div>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu (Visible only on screens smaller than 768px) -->
+<div id="mobile-menu" class="md:hidden bg-black p-4 space-y-4 hidden">
+    <a href="#" class="block text-white">Home</a>
+    <a href="#" class="block text-white">Products</a>
+    <a href="#" class="block text-white">Technology</a>
+    <a href="#" class="block text-white">Learn</a>
+    <a href="#" class="block text-white">Support</a>
+</div>
+
+
+
+<!-- 🎧 Product Highlight Section (Headphones Showcase) -->
+
+<section class="border-l border-r border-[#1F1F1F] px-4 sm:px-6 md:px-8">
+  <div class="relative bg-cover bg-center" style="background-image: url(./assets/img/Ellipse\ 1.png);">
+    <div class="flex gap-4 pt-10 w-full flex-col md:flex-row">
+      
+      <!-- Left Section -->
+      <div class="border border-[#1D1D1D] rounded-2xl pt-40 sm:pt-60 md:pt-80 p-3 w-full md:w-1/4 text-center md:text-left">
+        <div class="text-white">
+          <h1 class="text-xl sm:text-2xl md:text-4xl 2xl:text-6xl font-semibold">
+            Q20 <span class="text-sm sm:text-base md:text-lg 2xl:text-xl">Hybrid Active Noise</span>
+          </h1>
+          <p class="text-xs sm:text-sm md:text-base 2xl:text-xl leading-6 md:leading-7 mb-6">
+            Cancelling Headphones, designed to deliver pure audio and deep immersion wherever you are. Equipped with advanced hybrid ANC technology.
+          </p>
+        </div>
+        <div>
+          <img src="./assets/img/Mask groupsacn.png" alt="" class="w-full">
+        </div>
+      </div>
+
+      <!-- Middle Section -->
+      <div class="border border-[#1D1D1D] flex items-center justify-center rounded-2xl w-full md:w-1/2 lg:pt-0 pt-10">
+        <div class="bg-cover bg-center bg-no-repeat lg:pl-60 lg:pr-16 px-4 pt-0" style="background-image: url(./assets/img/Mask\ group\ 1.png);">
+          <div class="border-[2px] border-white flex justify-center md:justify-end items-end rounded-2xl">
+            <h1 class="px-2 sm:px-4 pt-40 sm:pt-60 md:pt-[400px] text-xl sm:text-2xl md:text-4xl 2xl:text-6xl font-semibold text-white text-center md:text-right">
+              BOLDER THAN FASHION.
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="border border-[#1D1D1D] rounded-2xl w-full md:w-1/4">
+        <div class="w-full h-full text-white rounded-xl flex flex-col justify-between p-4 sm:p-6">
+          
+          <!-- Rating -->
+          <div class="flex flex-col items-center md:items-end text-xs sm:text-sm 2xl:text-base space-y-1">
+            <div class="flex items-center gap-1">
+              <span class="text-yellow-400 text-base sm:text-lg">★</span>
+              <span>4.5/5</span>
+            </div>
+            <p class="text-gray-400 text-[10px] sm:text-xs">Customer Ratings</p>
+          </div>
+
+          <!-- Middle Text -->
+          <div class="text-center md:text-right space-y-2">
+            <h2 class="font-semibold text-sm sm:text-base md:text-lg 2xl:text-xl">Phenomenal Sound Quality</h2>
+            <p class="text-gray-400 text-xs sm:text-sm md:text-base">Hear every beat and every lyric with crystal clear sound.</p>
+          </div>
+
+          <!-- Bottom -->
+          <div class="space-y-3 mt-12 sm:mt-16 md:mt-24">
+            <div class="text-center md:text-right space-y-1">
+              <h3 class="font-semibold text-sm sm:text-base md:text-lg 2xl:text-xl">Fast charging</h3>
+              <p class="text-gray-400 text-xs sm:text-sm md:text-base">Energy That Never Slows Down.</p>
+            </div>
+            <div class="flex justify-between">
+<a href="#" class="block text-xs sm:text-sm md:text-base text-gray-400 hover:text-white underline text-center">
+              See The Product
+            </a>
+            <a href="" class="text-gray-400">→</a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- 🎵 Hero Banner Section (Intelligent Sound Promo) -->
+
+<section class="border-l border-r border-[#1F1F1F] px-4 sm:px-6 md:px-8 pt-10 sm:pt-16 md:pt-6">
+  <div class="bg-cover bg-center py-6 sm:py-8 md:py-10 px-3 sm:px-4 md:px-5 border border-[#1D1D1D] rounded-2xl" 
+       style="background-image: url(./assets/img/Frame\ 5.png);">
+
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0">
+      
+      <!-- Left Text -->
+      <div class="text-center md:text-left">
+        <h2 class="text-[28px] sm:text-[40px] md:text-[60px] lg:text-[80px] xl:text-[100px] 2xl:text-[160px] leading-tight text-white">
+          <span class="block md:inline text-[16px] sm:text-[24px] md:text-[36px] lg:text-[50px] xl:text-[50px] 2xl:text-[80px] font-light">
+            Intelligent
+          </span> 
+          Sound <br class="hidden sm:block"> Refined Design
+        </h2>
+      </div>
+
+      <!-- Right Button -->
+      <div>
+        <a href="#" 
+           class="inline-flex items-center 
+                  px-4 sm:px-6 md:px-8 lg:px-10 
+                  py-2 sm:py-3 md:py-4 lg:py-12 
+                  text-xs sm:text-sm md:text-base lg:text-lg 
+                  bg-[#141414] text-white rounded-full 
+                  hover:bg-gray-600 transition duration-300">
+          View All
+          <svg xmlns="http://www.w3.org/2000/svg" 
+               class="ml-2 w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" 
+               fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- 🎧 Product Grid Section (Headphones Catalog) -->
+<section class="border-l border-r border-[#1F1F1F] px-4 sm:px-6 md:px-8 pt-10 sm:pt-16 md:pt-6">
+  <div class=" rounded-2xl">
+    
+<!-- Top Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-stretch mb-5">
+
+  <!-- Card 1 -->
+  <div class="w-full bg-black text-white rounded-2xl border border-gray-800 p-4 flex flex-col gap-4">
+    <div class="bg-[#111] rounded-xl flex items-center justify-center w-full aspect-square">
+      <img src="./assets/img/head 1 (1).png" alt="Headphones"
+           class="h-[220px] w-auto object-contain" />
+    </div>
+    <div class="flex justify-between items-center gap-2">
+      <div class="max-w-[60%]">
+        <h3 class="font-semibold text-xl md:text-2xl lg:text-3xl mb-1 truncate">Cowin</h3>
+        <p class="text-gray-400 text-sm md:text-lg lg:text-xl font-semibold truncate">Headphones</p>
+      </div>
+      <div class="text-right">
+        <p class="font-semibold text-lg md:text-2xl lg:text-3xl mb-1 truncate">$120.00</p>
+        <div class="flex gap-1 sm:gap-2">
+          <span class="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-green-500 border border-gray-700"></span>
+          <span class="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-blue-500 border border-gray-700"></span>
+          <span class="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-purple-500 border border-gray-700"></span>
+          <span class="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-pink-500 border border-gray-700"></span>
+        </div>
+      </div>
+    </div>
+    <button class="w-full bg-gray-900 border border-gray-700 text-white font-semibold text-base md:text-lg lg:text-xl py-2 md:py-3 rounded-xl hover:bg-[#853408] transition">
+      Add To Cart
+    </button>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="w-full bg-black text-white rounded-2xl border border-gray-800 p-4 flex flex-col gap-4">
+    <div class="bg-[#111] rounded-xl flex items-center justify-center w-full aspect-square">
+      <img src="./assets/img/head 1 (2).png" alt="Headphones"
+           class="h-[220px] w-auto object-contain" />
+    </div>
+    <div class="flex justify-between items-center gap-2">
+      <div class="max-w-[60%]">
+        <h3 class="font-semibold text-xl md:text-2xl lg:text-3xl mb-1 truncate">Sony</h3>
+        <p class="text-gray-400 text-sm md:text-lg lg:text-xl font-semibold truncate">Headphones</p>
+      </div>
+      <div class="text-right">
+        <p class="font-semibold text-lg md:text-2xl lg:text-3xl mb-1 truncate">$150.00</p>
+        <div class="flex gap-1 sm:gap-2">
+          <span class="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-red-500 border border-gray-700"></span>
+          <span class="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-yellow-500 border border-gray-700"></span>
+          <span class="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-orange-500 border border-gray-700"></span>
+        </div>
+      </div>
+    </div>
+    <button class="w-full bg-gray-900 border border-gray-700 text-white font-semibold text-base md:text-lg lg:text-xl py-2 md:py-3 rounded-xl hover:bg-[#853408] transition">
+      Add To Cart
+    </button>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="w-full bg-black text-white rounded-2xl border border-gray-800 p-4 flex flex-col gap-4">
+    <div class="bg-[#111] rounded-xl flex items-center justify-center w-full aspect-square">
+      <img src="./assets/img/head 1 (3).png" alt="Headphones"
+           class="h-[220px] w-auto object-contain" />
+    </div>
+    <div class="flex justify-between items-center gap-2">
+      <div class="max-w-[60%]">
+        <h3 class="font-semibold text-xl md:text-2xl lg:text-3xl mb-1 truncate">Beats</h3>
+        <p class="text-gray-400 text-sm md:text-lg lg:text-xl font-semibold truncate">Headphones</p>
+      </div>
+      <div class="text-right">
+        <p class="font-semibold text-lg md:text-2xl lg:text-3xl mb-1 truncate">$180.00</p>
+        <div class="flex gap-1 sm:gap-2">
+          <span class="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-pink-500 border border-gray-700"></span>
+          <span class="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-indigo-500 border border-gray-700"></span>
+          <span class="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-gray-500 border border-gray-700"></span>
+        </div>
+      </div>
+    </div>
+    <button class="w-full bg-gray-900 border border-gray-700 text-white font-semibold text-base md:text-lg lg:text-xl py-2 md:py-3 rounded-xl hover:bg-[#853408] transition">
+      Add To Cart
+    </button>
+  </div>
+
+</div>
+
+
+<!-- Bottom Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-stretch">
+
+  <!-- Card 4 -->
+  <div class="w-full bg-black text-white rounded-2xl border border-gray-800 p-4 flex flex-col gap-4">
+    <div class="bg-[#111] rounded-xl flex items-center justify-center w-full aspect-square">
+      <img src="./assets/img/head 1 (4).png" alt="Headphones"
+           class="h-[220px] w-auto object-contain" />
+    </div>
+    <div class="flex justify-between items-center gap-2">
+      <div class="max-w-[60%]">
+        <h3 class="font-semibold text-xl md:text-2xl lg:text-3xl mb-1 truncate">JBL</h3>
+        <p class="text-gray-400 text-sm md:text-lg lg:text-xl font-semibold truncate">Headphones</p>
+      </div>
+      <div class="text-right">
+        <p class="font-semibold text-lg md:text-2xl lg:text-3xl mb-1 truncate">$140.00</p>
+        <div class="flex gap-1 sm:gap-2">
+          <span class="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-green-500 border border-gray-700"></span>
+          <span class="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-blue-500 border border-gray-700"></span>
+        </div>
+      </div>
+    </div>
+    <button class="w-full bg-gray-900 border border-gray-700 text-white font-semibold text-base md:text-lg lg:text-xl py-2 md:py-3 rounded-xl hover:bg-[#853408] transition">
+      Add To Cart
+    </button>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="w-full bg-black text-white rounded-2xl border border-gray-800 p-4 flex flex-col gap-4">
+    <div class="bg-[#111] rounded-xl flex items-center justify-center w-full aspect-square">
+      <img src="./assets/img/head 1 (5).png" alt="Headphones"
+           class="h-[220px] w-auto object-contain" />
+    </div>
+    <div class="flex justify-between items-center gap-2">
+      <div class="max-w-[60%]">
+        <h3 class="font-semibold text-xl md:text-2xl lg:text-3xl mb-1 truncate">Bose</h3>
+        <p class="text-gray-400 text-sm md:text-lg lg:text-xl font-semibold truncate">Headphones</p>
+      </div>
+      <div class="text-right">
+        <p class="font-semibold text-lg md:text-2xl lg:text-3xl mb-1 truncate">$200.00</p>
+        <div class="flex gap-1 sm:gap-2">
+          <span class="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-red-500 border border-gray-700"></span>
+          <span class="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-yellow-500 border border-gray-700"></span>
+        </div>
+      </div>
+    </div>
+    <button class="w-full bg-gray-900 border border-gray-700 text-white font-semibold text-base md:text-lg lg:text-xl py-2 md:py-3 rounded-xl hover:bg-[#853408] transition">
+      Add To Cart
+    </button>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="w-full bg-black text-white rounded-2xl border border-gray-800 p-4 flex flex-col gap-4">
+    <div class="bg-[#111] rounded-xl flex items-center justify-center w-full aspect-square">
+      <img src="./assets/img/head 1 (6).png" alt="Headphones"
+           class="h-[220px] w-auto object-contain" />
+    </div>
+    <div class="flex justify-between items-center gap-2">
+      <div class="max-w-[60%]">
+        <h3 class="font-semibold text-xl md:text-2xl lg:text-3xl mb-1 truncate">Marshall</h3>
+        <p class="text-gray-400 text-sm md:text-lg lg:text-xl font-semibold truncate">Headphones</p>
+      </div>
+      <div class="text-right">
+        <p class="font-semibold text-lg md:text-2xl lg:text-3xl mb-1 truncate">$170.00</p>
+        <div class="flex gap-1 sm:gap-2">
+          <span class="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-purple-500 border border-gray-700"></span>
+          <span class="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-orange-500 border border-gray-700"></span>
+        </div>
+      </div>
+    </div>
+    <button class="w-full bg-gray-900 border border-gray-700 text-white font-semibold text-base md:text-lg lg:text-xl py-2 md:py-3 rounded-xl hover:bg-[#853408] transition">
+      Add To Cart
+    </button>
+  </div>
+
+</div>
+
+  </div>
+</section>
+
+
+<!-- 🛒 Single Product Detail Section -->
+<section class="border-l border-r border-[#1F1F1F] px-4 sm:px-6 md:px-8 pt-8 sm:pt-12 md:pt-6">
+<div class="text-white flex items-center justify-center">
+  <div class="w-full rounded-2xl p-3 sm:p-4 md:p-6 border border-[#1F1F1F] flex flex-col sm:flex-row gap-6 lg:gap-10 bg-cover" 
+       style="background-image: url(./assets/img/Frame\ 10.png);">
+
+    <!-- Left Product Image -->
+    <div class="flex-1 flex flex-col items-center">
+      <div class="bg-[#141414] rounded-xl p-3 sm:p-4 md:p-6 flex items-center justify-center 
+                  w-full max-w-[641px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] 2xl:h-[755px]">
+        <img src="./assets/img/head-phone5 (4).png" alt="Headphones" class="max-h-full object-contain">
+      </div>
+
+      <!-- Thumbnails -->
+      <div class="flex gap-2 sm:gap-3 md:gap-4 mt-4 lg:justify-start justify-center flex-wrap">
+        <div class="bg-[#141414] p-1 sm:p-2 rounded-lg cursor-pointer">
+          <img src="./assets/img/head-phone5 (1).png" class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 2xl:w-[170px] 2xl:h-[214px] object-contain">
+        </div>
+        <div class="bg-zinc-900 p-1 sm:p-2 rounded-lg cursor-pointer">
+          <img src="./assets/img/head-phone5 (2).png" class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 2xl:w-[170px] 2xl:h-[214px] object-contain">
+        </div>
+        <div class="bg-zinc-900 p-1 sm:p-2 rounded-lg cursor-pointer">
+          <img src="./assets/img/head-phone5 (3).png" class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 2xl:w-[170px] 2xl:h-[214px] object-contain">
+        </div>
+        <div class="bg-zinc-900 p-1 sm:p-2 rounded-lg cursor-pointer">
+          <img src="./assets/img/head-phone5 (5).png" class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 2xl:w-[170px] 2xl:h-[214px] object-contain">
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Product Info -->
+    <div class="flex-1 flex flex-col justify-between mt-6 sm:mt-0">
+      <div>
+        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-semibold leading-snug mb-4 sm:mb-6 pt-8">
+          Signal Succulent Plant
+        </h2>
+
+        <!-- Rating -->
+        <div class="flex text-sm sm:text-base md:text-lg lg:text-xl font-semibold items-center mt-2 text-yellow-400 mb-4 sm:mb-6">
+          <h3>
+            ★★★★☆
+            <span class="text-gray-400 ml-2">(4.5 | 50 Customer Reviews)</span>
+          </h3>
+        </div>
+
+        <!-- Price -->
+        <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-semibold mt-2 sm:mt-3 pb-6 sm:pb-12 lg:pb-20">
+          $95.00
+        </p>
+
+        <!-- Description -->
+        <p class="text-gray-400 mt-3 sm:mt-4 text-sm sm:text-base md:text-lg lg:text-xl font-normal leading-relaxed">
+          A wild and free growing variety from the Monstera family, ready to be tamed in your home. 
+          The Monstera plant is the perfect choice for any urban jungle enthusiast. 
+          Snap it up while you can as these won’t stay in stock long!
+        </p>
+
+        <!-- Colors -->
+        <div class="flex gap-2 sm:gap-3 mt-4 sm:mt-5">
+          <span class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 rounded-full bg-green-500 cursor-pointer"></span>
+          <span class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 rounded-full bg-purple-600 cursor-pointer"></span>
+          <span class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 rounded-full bg-pink-600 cursor-pointer"></span>
+          <span class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 rounded-full bg-orange-500 cursor-pointer"></span>
+        </div>
+      </div>
+
+      <!-- Quantity + Cart -->
+      <div class="flex flex-wrap items-center gap-2 sm:gap-3 md:gap-4 mt-6">
+        <div class="flex items-center bg-zinc-900 rounded-lg p-1 sm:p-2">
+          <button class="px-2 sm:px-3 py-1 text-xs sm:text-sm md:text-base lg:text-lg bg-white text-black rounded-sm font-bold">-</button>
+          <span class="px-2 sm:px-3 md:px-4 py-1">3</span>
+          <button class="px-2 sm:px-3 py-1 text-xs sm:text-sm md:text-base lg:text-lg bg-white text-black rounded-sm font-bold">+</button>
+        </div>
+        <button class="bg-[#853408] hover:bg-orange-700 px-3 sm:px-4 md:px-6 py-2 sm:py-2.5 md:py-3 text-sm sm:text-base md:text-lg lg:text-xl rounded-lg font-semibold">
+          Add To Cart
+        </button>
+        <button class="p-2 sm:p-2.5 md:p-3 rounded-lg bg-zinc-900">❤</button>
+        <button class="p-2 sm:p-2.5 md:p-3 rounded-lg bg-zinc-900">
+          <img src="./assets/img/placeholder 1.png" class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" alt="">
+        </button>
+      </div>
+
+      <!-- Extra Info -->
+      <div class="mt-4 sm:mt-6 text-xs sm:text-sm md:text-base lg:text-lg 2xl:text-xl font-normal text-gray-400 space-y-2 sm:space-y-3 md:space-y-5">
+        <p>Categories: Featured product, Home page, New Arrival</p>
+        <p>Tags: $100 - $150, black, blue, grey, red</p>
+        <p>Stock: 19 available</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+
+<!-- 🟡 Section: Sale Countdown -->
+<section class="border-l border-r border-[#1F1F1F] px-4 sm:px-6 md:px-8 pt-8 sm:pt-12 md:pt-6">
+
+<div class="bg-black flex items-center justify-center min-h-screen">
+   <div class="w-full bg-black border border-[#1F1F1F]  px-4 sm:px-6 md:px-8 lg:px-10 py-8 sm:py-10 text-white rounded-2xl flex flex-col md:flex-row items-center justify-between shadow-lg gap-8">
+    
+    <!-- Left Content -->
+    <div class="flex-1 space-y-4 text-center md:text-left">
+      <h2 class="text-3xl sm:text-5xl md:text-6xl lg:text-[80px] font-semibold leading-tight">
+        Hurry up <br> Sale Ends In
+      </h2>
+
+      <!-- Countdown -->
+      <div id="countdown" class="text-3xl sm:text-5xl md:text-6xl lg:text-[100px] font-semibold flex justify-center md:justify-start space-x-2 sm:space-x-4">
+        <div><span id="days">00</span><p class="text-xs sm:text-sm font-normal">Days</p></div>
+        <div>:</div>
+        <div><span id="hours">00</span><p class="text-xs sm:text-sm font-normal">Hours</p></div>
+        <div>:</div>
+        <div><span id="minutes">00</span><p class="text-xs sm:text-sm font-normal">Min</p></div>
+        <div>:</div>
+        <div><span id="seconds">00</span><p class="text-xs sm:text-sm font-normal">Sec</p></div>
+      </div>
+
+      <!-- Button -->
+      <button class="bg-gray-800 w-full sm:w-[300px] md:w-[400px] lg:w-[500px] px-6 py-3 text-start rounded-full text-lg sm:text-xl font-semibold hover:bg-gray-700">
+        Get This Offer
+      </button>
+    </div>
+
+    <!-- Right Image -->
+    <div class=" flex-1 mt-6 md:mt-0 flex  justify-between items-center">
+      <!-- Badge -->
+       <div class="relative xl:-top-28 lg:xl:-top-28 top-0">
+         <img src="./assets/img/bestoffer (2).png" alt="" class="w-16 sm:w-20 md:w-24 lg:w-28 xl:w-32">
+       </div>
+      <div class="flex justify-end">
+<img src="assets/img/bestoffer (1).png" 
+           alt="Headphones" 
+           class="w-48 sm:w-64 md:w-80 lg:w-96 rounded-lg object-cover">
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+</section>
+
+
+<!-- 🟡 Section: Immersive Sound -->
+
+<section class="border-l border-r border-[#1F1F1F] px-4 sm:px-6 md:px-8 pt-8 sm:pt-12 md:pt-6">
+
+<div>
+  <div class="flex flex-col lg:flex-row justify-center items-center w-full gap-6 lg:gap-10 rounded-2xl p-5 border border-[#1F1F1F]">
+    
+    <!-- Left Image -->
+    <div class="border border-[#1F1F1F] rounded-2xl flex justify-center w-full lg:w-1/2">
+         <img src="./assets/img/Frame 1707480411.png" class="w-full sm:w-3/4 md:w-2/3 lg:w-full h-auto" alt="">
+    </div>
+
+    <!-- Right Content -->
+    <div class="w-full lg:w-1/2 text-white text-center lg:text-left mt-6 lg:mt-0">
+      <h2 class="text-3xl sm:text-5xl md:text-5xl xl:text-[60px] 2xl:text-[80px] font-semibold leading-tight">
+        Immersive Sound <br class="hidden lg:block"> All Around You
+      </h2>
+
+      <div class="text-base sm:text-lg md:text-xl font-normal text-[#989898] mt-4">
+        <p>
+          Step into your favorite track and feel every note come alive — as if it’s happening all around you. That’s the magic of true 3D sound.
+        </p>
+      </div>
+
+      <div class="mt-6 flex justify-center lg:justify-start">
+        <img src="./assets/img/Group 52.png" alt="" class="w-40 sm:w-48 md:w-56 lg:w-auto">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</section>
+
+
+
+<!-- 🟡 Section: Customer Testimonials -->
+<section class="border-l border-r border-[#1F1F1F] px-4 sm:px-6 md:px-8 pt-8 sm:pt-12 md:pt-6">
+    
+<div  class="bg-black text-white px-4 sm:px-6 md:px-8 lg:px-10 rounded-2xl border border-[#1F1F1F] py-8 sm:py-10 lg:py-12">
+   <div class="w-full">
+    
+    <!-- Top Section -->
+    <div class="flex flex-col md:flex-row items-center justify-between mb-10 gap-6 md:gap-0">
+      <!-- Left Heading -->
+      <h2 class="text-4xl sm:text-5xl md:text-6xl 2xl:text-[125px] xl:text-[80px] font-semibold leading-snug text-center md:text-left">
+        <span class="text-gray-400 text-lg sm:text-xl md:text-2xl lg:text-4xl font-light">what</span> 
+      our <br> customer says
+      </h2>
+
+      <!-- Right Ratings -->
+      <div class="flex items-end mt-4 md:mt-0">
+        <img src="./assets/img/1001 (1).png" alt="" class="w-32 sm:w-40 md:w-48 lg:w-auto">
+      </div>
+    </div>
+
+    <!-- Testimonial Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      
+      <!-- Card 1 -->
+      <div class="border border-[#1F1F1F] rounded-2xl p-4 sm:p-6 flex flex-col space-y-4">
+        <img src="./assets/img/1001.png" class="w-16 sm:w-20 md:w-24 h-auto" alt="">
+        <p class="text-[#989898] text-base sm:text-lg 2xl:text-xl xl:text-[14px] font-medium leading-relaxed">
+          “Our customers have shared their experiences and given us an average rating of around 4.8 stars, with more than 50,000 reviews.”
+        </p>
+        <img src="./assets/img/1001 (4).png" alt="Customer" class="w-full rounded-lg object-cover">
+      </div>
+
+      <!-- Card 2 -->
+      <div class="border border-[#1F1F1F] rounded-2xl p-4 sm:p-6 flex flex-col space-y-4">
+        <img src="./assets/img/1001.png" class="w-16 sm:w-20 md:w-24 h-auto" alt="">
+        <p class="text-[#989898] text-base sm:text-lg 2xl:text-xl xl:text-[14px]  font-medium leading-relaxed">
+          “Our customers have shared their experiences and given us an average rating of around 4.8 stars, with more than 50,000 reviews.”
+        </p>
+        <img src="./assets/img/1001 (3).png" alt="Customer" class="w-full rounded-lg object-cover">
+      </div>
+
+       <!-- Card 3 -->
+      <div class="border border-[#1F1F1F] rounded-2xl p-4 sm:p-6 flex flex-col space-y-4">
+        <img src="./assets/img/1001.png" class="w-16 sm:w-20 md:w-24 h-auto" alt="">
+        <p class="text-[#989898] text-base sm:text-lg 2xl:text-xl xl:text-[14px]  font-medium leading-relaxed">
+          “Our customers have shared their experiences and given us an average rating of around 4.8 stars, with more than 50,000 reviews.”
+        </p>
+        <img src="./assets/img/1001 (2).png" alt="Customer" class="w-full rounded-lg object-cover">
+      </div>
+
+       <!-- Card 4 -->
+      <div class="border border-[#1F1F1F] rounded-2xl p-4 sm:p-6 flex flex-col space-y-4">
+        <img src="./assets/img/1001.png" class="w-16 sm:w-20 md:w-24 h-auto" alt="">
+        <p class="text-[#989898] text-base sm:text-lg 2xl:text-xl xl:text-[14px]  font-medium leading-relaxed">
+          “Our customers have shared their experiences and given us an average rating of around 4.8 stars, with more than 50,000 reviews.”
+        </p>
+        <img src="./assets/img/1001 (4).png" alt="Customer" class="w-full rounded-lg object-cover">
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</section>
+
+
+
+
+
+<!-- 🟡 Section: Hero - Next Generation of Sound -->
+
+<section class="border-l border-r border-[#1F1F1F] 
+  px-4 sm:px-6 md:px-8 pt-8 sm:pt-12 md:pt-6">
+    
+  <div class="bg-black text-white 
+    px-4 sm:px-6 md:px-8 lg:px-4 
+    rounded-2xl border border-[#1F1F1F] 
+    py-8 sm:py-10 lg:py-4">
+
+    <div>
+      <!-- Heading -->
+      <div class="text-center mb-14">
+        <h1 class="text-[40px] sm:text-[60px] md:text-[80px] lg:text-[100px] xl:text-[125px] 
+          font-semibold text-white leading-tight sm:leading-snug lg:leading-[1.1]">
+
+          <span class="text-[24px] sm:text-[36px] md:text-[50px] lg:text-[60px] xl:text-[70px] 
+            font-normal text-[#8F8F8F]">
+            Step
+          </span> 
+          Into the Next <br>
+
+          Generation of  
+          <span class="text-[24px] sm:text-[36px] md:text-[50px] lg:text-[60px] xl:text-[70px] 
+            font-normal text-[#8F8F8F]">
+            Sound
+          </span>
+        </h1>
+      </div>
+
+      <!-- Image -->
+      <div>
+        <img src="./assets/img/image 43.png" 
+          class="w-full object-cover rounded-lg" 
+          alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 🔻 Footer Section -->
+
+<footer class="border-l border-r border-b border-[#1F1F1F] 
+  px-4 sm:px-6 md:px-8 pt-8 sm:pt-12 md:pt-6 rounded-b-2xl">
+    
+   <!-- Top Section -->
+  <div class="flex flex-col md:flex-row md:justify-between gap-10 text-center md:text-left">
+    
+    <!-- Subscribe Section -->
+    <div class="md:w-1/3">
+      <h2 class="text-lg sm:text-xl 2xl:text-3xl xl:text-xl font-semibold mb-4 text-white">
+        Subscribe and never miss out.
+      </h2>
+      <div class="flex justify-center md:justify-start">
+        <div class="flex items-center justify-between bg-[#2A2A2A] text-gray-400 rounded-full  
+        w-full sm:w-[350px] md:w-[400px]">
+          <h4 class="px-3 text-base sm:text-lg 2xl:text-xl xl:text-sm font-semibold">Get This Offer</h4>
+          <button class="bg-[#993B04] px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full 
+          text-base sm:text-lg 2xl:text-xl xl:text-sm font-medium text-white ml-2">
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+      
+    <!-- Headphones -->
+    <div class="md:w-[22%]">
+      <h2 class="text-lg sm:text-2xl 2xl:text-3xl xl:text-xl font-semibold mb-4 text-white">Headphones</h2>
+      <ul class="space-y-2 text-base sm:text-lg 2xl:text-xl xl:text-sm font-medium text-gray-400">
+        <li>Earphones</li>
+        <li>Speakers</li>
+        <li>Accessories</li>
+        <li>Speakers</li>
+      </ul>
+    </div>
+
+    <!-- Our Mission -->
+    <div class="md:w-[22%]">
+      <h2 class="text-lg sm:text-2xl 2xl:text-3xl xl:text-xl font-semibold mb-4 text-white">Our Mission</h2>
+      <ul class="space-y-2 text-base sm:text-lg 2xl:text-xl xl:text-sm font-medium text-gray-400">
+        <li>Earphones</li>
+        <li>Jobs</li>
+      </ul>
+    </div>
+
+    <!-- Contact Options -->
+    <div class="md:w-[22%]">
+      <h2 class="text-lg sm:text-2xl 2xl:text-3xl xl:text-xl font-semibold mb-4 text-white">Contact Options</h2>
+      <ul class="space-y-2 text-base sm:text-lg 2xl:text-xl xl:text-sm font-medium text-gray-400">
+        <li>Shipping</li>
+        <li>Returns</li>
+        <li>FAQ</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Section -->
+  <div class="border-t border-[#1F1F1F] mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center 
+  text-gray-400 text-sm sm:text-base 2xl:text-xl xl:text-sm font-medium mb-6 text-center sm:text-left">
+    <p>© 2025 Audio City | Designed by <span class="text-white">rah_ul_hussian</span></p>
+    <div class="flex justify-center sm:justify-end space-x-4 sm:space-x-6 mt-4 sm:mt-0">
+      <a href="#" class="hover:text-white">Facebook</a>
+      <a href="#" class="hover:text-white">Twitter</a>
+      <a href="#" class="hover:text-white">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+ <!-- Countdown Script -->
+  <script>
+    const countdown = () => {
+      const endDate = new Date("Sep 5, 2025 23:59:59").getTime();
+      const now = new Date().getTime();
+      const gap = endDate - now;
+
+      const second = 1000;
+      const minute = second * 60;
+      const hour = minute * 60;
+      const day = hour * 24;
+
+      const d = Math.floor(gap / day);
+      const h = Math.floor((gap % day) / hour);
+      const m = Math.floor((gap % hour) / minute);
+      const s = Math.floor((gap % minute) / second);
+
+      document.getElementById("days").innerText = d;
+      document.getElementById("hours").innerText = h;
+      document.getElementById("minutes").innerText = m;
+      document.getElementById("seconds").innerText = s;
+    };
+
+    setInterval(countdown, 1000);
+  </script>
+
+
+<script>
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileIcons = document.getElementById('mobile-icons');
+
+    menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileIcons.classList.toggle('hidden');
+    });
+</script>
+    </body>
+    </html>
